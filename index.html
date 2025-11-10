@@ -2,105 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Desktop.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Desktop.css">
 
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
 </head>
 
 <body>
-    <div class="topbar">
-        <div class="left">
-            <img id="startbtn" src="https://i.pinimg.com/736x/e7/62/bc/e762bc5436810c46c4697987ae92e261.jpg" alt=""> 
-            <i class="fa-solid fa-hard-drive app" style="color: #74C0FC;" data-icon="fa-solid fa-hard-drive" data-id="folder" data-title="File System" data-url="/file.html"></i>
-            <i class="fa-solid fa-terminal app" style="color: #ffffff;"  data-icon="fa-solid fa-terminal" data-id="terminal" data-title="Terminal" data-url="/teminal.html" ></i>
-            
-        </div>
-        <div class="right">
-            <p>9.09PM</p>
-            <i class="fa-solid fa-ethernet"></i>
-            <i class="fa-solid fa-volume-low"></i>
-            <i class="fa-solid fa-bell"></i>
-            <i class="fa-solid fa-battery-full"></i>
-            <i class="fa-solid fa-lock"></i>
-            <i class="fa-solid fa-power-off"></i>
-        </div>
-
+  <div class="topbar">
+    <div class="left">
+      <img id="startbtn" src="https://i.pinimg.com/736x/e7/62/bc/e762bc5436810c46c4697987ae92e261.jpg" alt="">
+      <i class="fa-solid fa-hard-drive app" style="color: #74C0FC;" data-icon="fa-solid fa-hard-drive" data-id="folder"
+        data-title="File System" data-url="/file.html"></i>
+      <i class="fa-solid fa-terminal app" style="color: #ffffff;" data-icon="fa-solid fa-terminal" data-id="terminal"
+        data-title="Terminal" data-url="/teminal.html"></i>
 
     </div>
-    <div class="desktop">
-        <div class="context">
-            <div>
-                <i class="fa-solid fa-window-maximize"></i>
-                <p>Refresh</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-window-minimize"></i>
-                <p>Change Background</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-window-close"></i>
-                <p>Icons</p>
-            </div>
+    <div class="right">
+      <p>9.09PM</p>
+      <i class="fa-solid fa-ethernet"></i>
+      <i class="fa-solid fa-volume-low"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-battery-full"></i>
+      <i class="fa-solid fa-lock"></i>
+      <i class="fa-solid fa-power-off"></i>
+    </div>
 
-        </div>
 
-<div class="start-menu">
-  <div class="start-header">
-    <input type="text" id="menu-search" placeholder="Search..." />
   </div>
-  <div class="menu-body">
-    <div class="menu-categories">
-      <div class="category" data-cat="all"><i class="fa-solid fa-th-large"></i> All Applications</div>
-      <div class="category" data-cat="settings"><i class="fa-solid fa-gear"></i> Settings</div>
-      <div class="category" data-cat="vuln"><i class="fa-solid fa-shield-alt"></i> 02 - Vulnerability Analysis</div>
-      <div class="category" data-cat="web"><i class="fa-solid fa-globe"></i> 03 - Web Application Analysis</div>
-      <div class="category" data-cat="database"><i class="fa-solid fa-database"></i> 04 - Database Assessment</div>
-      <div class="category" data-cat="password"><i class="fa-solid fa-key"></i> 05 - Password Attacks</div>
-      <div class="category" data-cat="wireless"><i class="fa-solid fa-wifi"></i> 06 - Wireless Attacks</div>
-      <div class="category" data-cat="forensics"><i class="fa-solid fa-microscope"></i> 11 - Forensics</div>
-      <div class="category" data-cat="reporting"><i class="fa-solid fa-chart-line"></i> 12 - Reporting Tools</div>
+  <div class="desktop">
+    <div class="context">
+      <div>
+        <i class="fa-solid fa-window-maximize"></i>
+        <p>Refresh</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-window-minimize"></i>
+        <p>Change Background</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-window-close"></i>
+        <p>Icons</p>
+      </div>
+
     </div>
 
-    <div class="menu-apps">
-      <!-- Example apps for the selected category -->
-      <div class="app-item">
-        <i class="fa-solid fa-terminal"></i> Terminal
+    <div class="start-menu">
+      <div class="start-header">
+        <input type="text" id="menu-search" placeholder="Search..." />
       </div>
-      <div class="app-item">
-        <i class="fa-solid fa-globe"></i> Browser
+      <div class="menu-body">
+        <div class="menu-categories">
+          <div class="category" data-cat="all"><i class="fa-solid fa-th-large"></i> All Applications</div>
+          <div class="category" data-cat="settings"><i class="fa-solid fa-gear"></i> Settings</div>
+          <div class="category" data-cat="vuln"><i class="fa-solid fa-shield-alt"></i> 02 - Vulnerability Analysis</div>
+          <div class="category" data-cat="web"><i class="fa-solid fa-globe"></i> 03 - Web Application Analysis</div>
+          <div class="category" data-cat="database"><i class="fa-solid fa-database"></i> 04 - Database Assessment</div>
+          <div class="category" data-cat="password"><i class="fa-solid fa-key"></i> 05 - Password Attacks</div>
+          <div class="category" data-cat="wireless"><i class="fa-solid fa-wifi"></i> 06 - Wireless Attacks</div>
+          <div class="category" data-cat="forensics"><i class="fa-solid fa-microscope"></i> 11 - Forensics</div>
+          <div class="category" data-cat="reporting"><i class="fa-solid fa-chart-line"></i> 12 - Reporting Tools</div>
+        </div>
+
+        <div class="menu-apps">
+
+          <div class="app-item">
+            <i class="fa-solid fa-terminal"></i> Terminal
+          </div>
+          <div class="app-item">
+            <i class="fa-solid fa-globe"></i> Browser
+          </div>
+          <div class="app-item">
+            <i class="fa-solid fa-folder"></i> File Manager
+          </div>
+        </div>
       </div>
-      <div class="app-item">
-        <i class="fa-solid fa-folder"></i> File Manager
+
+      <div class="start-footer">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-lock"></i>
+        <i class="fa-solid fa-power-off"></i>
       </div>
     </div>
+
+
+
+
+
   </div>
 
-  <div class="start-footer">
-    <i class="fa-solid fa-user"></i>
-    <i class="fa-solid fa-lock"></i>
-    <i class="fa-solid fa-power-off"></i>
-  </div>
-</div>
-
-
-
-
-
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
-        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
-    <script defer src="Desktop.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+    integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+  <script defer src="Desktop.js"></script>
 
 </body>
 

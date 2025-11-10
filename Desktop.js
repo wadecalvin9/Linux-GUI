@@ -9,6 +9,7 @@ $(".start-menu").click(function (e) {
 
 $(document).click(function () {
   $(".start-menu").removeClass("active");
+  $(".context").hide();
 });
 
 $(".category").click(function () {
