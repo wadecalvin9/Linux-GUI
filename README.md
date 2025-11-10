@@ -2,8 +2,8 @@
 
 A fully interactive desktop-like environment built in HTML, CSS, and JavaScript. It features draggable windows, a taskbar, blur effects, a start menu, and dynamic app launching. The UI design uses a modern, glass-blur aesthetic inspired by Kali Linux and Windows.
 
-## ✅ Features
-1. Desktop
+## Features
+# 1. Desktop
 
 Fullscreen responsive desktop with background image
 
@@ -13,7 +13,7 @@ Click-to-hide context menu
 
 Click-outside to close start menu
 
-2. Taskbar
+## 2. Taskbar
 
 Dynamic icons generated when apps launch
 
@@ -25,7 +25,7 @@ Only one icon per app (prevents duplicates)
 
 Active icon highlight states
 
-3. Start Menu
+## 3. Start Menu
 
 Smooth fade/slide animation
 
@@ -33,7 +33,7 @@ Fully toggleable
 
 Automatically closes when clicking outside
 
-4. Windows
+## 4. Windows
 
 Independent draggable windows
 
@@ -60,3 +60,29 @@ Context menu options
 Prevents background caret selection
 
 Desktop-level containment for all draggable windows
+
+
+## Project Structure
+```bash
+/project
+│── index.html
+│── style.css
+│── app.js
+│── README.md
+│── assets/
+│     └── icons
+│     └── wallpapers
+```
+##  How It Works
+App Buttons
+Each app launcher contains metadata:
+```html
+<button class="app"
+        data-title ="browser"
+        data-id="google"
+        data-url="https://google.com"
+        data-icon="fa-brands fa-chrome">
+    Google
+</button>
+```
+
