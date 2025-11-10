@@ -85,4 +85,30 @@ Each app launcher contains metadata:
     Google
 </button>
 ```
+data-id → unique ID to prevent duplicates
 
+data-url → window content
+
+data-icon → taskbar icon
+
+Clicking an app checks if it is already open.
+
+If open → window is brought forward
+
+If closed → window + taskbar icon are created
+
+## Window Creation Logic
+
+Windows are dynamically created:
+```javaScript
+$win = $(`
+  <div class="container" data-id="${appID}">
+      <div class="tophandle">
+          <i class="fa-solid fa-window-minimize"></i>
+          <i class="fa-solid fa-window-maximize"></i>
+          <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="content"></div>
+  </div>
+`).appendTo(".desktop");
+```
